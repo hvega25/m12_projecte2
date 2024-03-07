@@ -1,0 +1,7 @@
+/*Página de estilos del footer*/
+#footer_home{
+    background-color: #61dafb;
+    display: flex;
+    position: fixed;
+    min-height: 5vh;
+}
