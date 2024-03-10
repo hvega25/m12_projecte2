@@ -1,0 +1,46 @@
+/*Edición para el header global de la página*/
+
+/*Contenedor de todos los elementos del headr
+
+*/
+header {
+    display: flex;
+    border-bottom: #282c34 solid 1px;
+    padding-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #E5E5E5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header a {
+    color: #F40017;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: "Fira Sans", sans-serif;
+
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.inicio {
+    text-align: center;
+    padding-left: 10%;
+}
+
+.botonera > * {
+    margin-left: 10px;
+}
+
+.botonera a {
+    font-size: 20px;
+}

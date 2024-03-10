@@ -1,4 +1,5 @@
-import "./estilos/footer.css"
+import "../estilos/footer.css"
+
 
 //Componente footer este ira en cada página de la web
 function Footer (){
