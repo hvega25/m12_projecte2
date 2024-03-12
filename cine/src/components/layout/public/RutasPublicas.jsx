@@ -1,3 +1,6 @@
+/*Componente que contiene las rutas si un usuario no esta registrado y logeado*/
+
+/*Importacion de componentes*/
 import {Route, Routes} from "react-router-dom";
 import Home from "./Home";
 import Salas from "./Salas";
@@ -9,8 +12,9 @@ import React from "react";
 
 
 const RutasPublicas = () => {
-    return (<Routes>
-            {/*Ruta púublica que tendŕa acceso a la mayoria de las páginas*/}
+    return (
+        <Routes>
+            {/*Ruta pública que tendŕa acceso a la mayoria de las páginas*/}
             <Route path="/" index element={<Home/>}>
             </Route>
             <Route path="/salas" element={<Salas/>}/>

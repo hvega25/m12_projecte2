@@ -3,12 +3,12 @@ import React from "react";
 /*Importación de elementos para la página*/
 import "../estilos/error.css"
 
-function Error() {
+const Error = () => {
     return (
         <>
             {/*Cotenedor de la imagen*/}
             <div className="contenedor_imagen">
-              <div className="imagen_fondo"></div>
+                <div className="imagen_fondo"></div>
                 <div className="texto">
                     {/*Texto que se le muestra al usuario*/}
                     <h1> 404 no encontrado </h1>

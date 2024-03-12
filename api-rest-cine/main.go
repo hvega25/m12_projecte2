@@ -15,6 +15,9 @@ func main() {
 		c.JSON(200, gin.H{
 			"message": "funciona",
 		})
+		c.JSON(404, gin.H{
+			"message": "eror",
+		})
 	})
 	r.Run(puerto) // listen and serve on 0.0.0.0:8080
 }

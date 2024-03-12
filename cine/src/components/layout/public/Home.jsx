@@ -1,4 +1,6 @@
-function Home() {
+/*Primera pagina que el usuario podra visualizar*/
+
+const Home = () => {
     return (
 
         <div className="contenedor_home">

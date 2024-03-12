@@ -6,12 +6,12 @@ import React from "react";
 
 import Rutas from "./routes/Rutas";
 
-function App() {
+const App = () => {
 
     /*Enrutamiento con capa pública y privada*/
     return (
-
-      <Rutas/>
+        /*Componente rutas*/
+        <Rutas/>
 
 
     );

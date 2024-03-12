@@ -1,6 +1,7 @@
+/*Pagina que es el tercer estado en la pasarela de compra*/
 import React from "react";
 
-function Pasalela_promo(){
+const Pasalela_promo = () => {
     return(
         <h1> Este es Pasarela promociones</h1>
     );

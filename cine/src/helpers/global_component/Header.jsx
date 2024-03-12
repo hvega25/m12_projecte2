@@ -7,10 +7,10 @@ import {Link} from "react-router-dom";
 
 //Importaciones de componenentes necesarios
 
-function Header() {
+const Header = () => {
     return (
-        <header>
-            <div className="contenedor">
+        <header className={"header_principal"}>
+            <div className="contenedor_header">
 
                 <div className="inicio">
                     <Link to={"/"}> Inicio</Link>

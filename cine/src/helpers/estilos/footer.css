@@ -1,13 +1,36 @@
 /*Página de estilos del footer*/
-#footer_home {
+
+/*Estilos del footer*/
+.contenedor-footer {
     height: 40px;
     color: red;
     padding: 20px;
     width: 100%;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     text-align: center;
     border-top: 1px solid #E5E5E5;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+}
+
+/*Contenedor adentro del footer contiene las redes*/
+.footer-redes {
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+    font-family: "Fira Sans", sans-serif;
+    align-items: center;
+}
+
+/*Edición para el icono de twitter*/
+.twitter {
+    margin-right: 20px;
+}
+
+/*Edición para el texto de redes*/
+.redes {
+    margin-right: 20px;
 }

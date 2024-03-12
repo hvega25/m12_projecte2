@@ -1,4 +1,3 @@
-
 /*Componente rutas de la web, si estas logeado o no te dejará ingresar a las páginas*/
 
 import {BrowserRouter} from "react-router-dom";
@@ -19,9 +18,19 @@ const Rutas = () => {
     return (
 
         <BrowserRouter>
-                <Header/>
-                    {usuarioAutenticado ? <RutasPublicas/> : <RutasPrivadas/>}
-                <Footer/>
+            <Header/>
+            {/*"Condicional para saber que rutas tomar"*/}
+            {usuarioAutenticado ? (
+                /*Si el condicional es false se ejecutara esta ruta*/
+                <>
+                    <RutasPrivadas/>
+                </>
+                /*Si el condicional es true se ejecuta esta parte*/
+            ) : (<RutasPublicas/>)
+
+
+            }
+            <Footer/>
         </BrowserRouter>
 
     );
