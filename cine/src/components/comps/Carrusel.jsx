@@ -1,40 +1,10 @@
 /*Componente carrusel*/
 
 //Importación necesarias
-import "../estilos/carrusel-estilos.css"
-import imagen from "../imagenes/lobo de wallstreet.jpg"
+import "../estilos/carrusel-estilos.css";
+//importación básica antes de hacer tener una api
+import datos_prueba  from "./Datos_prueba";
 
-
-//Datos de prueba
-const datos_prueba = [
-    {
-        id: 1,
-        titulo: "Lorem ipsum",
-        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" +
-            ", sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        url: imagen,
-    }, {
-        id: 2,
-        titulo: "Lorem ipsum",
-        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" +
-            ", sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        url: imagen,
-    },
-    {
-        id: 3,
-        titulo: "Lorem ipsum",
-        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" +
-            ", sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        url: imagen,
-    },
-    {
-        id: 4,
-        titulo: "Lorem ipsum",
-        descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit" +
-            ", sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        url: imagen,
-    }
-];
 const Carrusel = () => {
     return (
 
@@ -46,8 +16,8 @@ const Carrusel = () => {
             <div className="carrusel-img-boton">
                 {/**Mapeo de datos del json de  prueba
                  Imprime el total del json cargado en este caso hay 4*/}
-                {datos_prueba.map((item) => (
-                   /**Crea el contenedor con todos sus componenente*/
+                {datos_prueba && datos_prueba.map((item) => (
+                    /**Crea el contenedor con todos sus componenente*/
                     <div key={item.id} className="contenedor-img-boton">
                         {/**Hace una un componente entre la imagen y el texto y el botón*/}
                         <div className="imagen-texto">
