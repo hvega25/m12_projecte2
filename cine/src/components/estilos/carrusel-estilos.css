@@ -1,0 +1,103 @@
+
+/*Contenedor de todas las imagenes y texto generado*/
+.carrusel-img-boton {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding: 40px;
+
+}
+
+.contenedor-img-boton {
+    width: 500px;
+    margin-right: 20px;
+}
+
+.contenedor-img-boton img {
+    width: 100%;
+}
+
+/* Estilos para la fila de imágenes */
+.carrusel-img-boton {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para el contenedor de cada imagen y texto */
+.contenedor-img-boton {
+    width: 500px;
+    margin-right: 20px;
+
+}
+
+/* Estilos para las imágenes */
+.contenedor-img-boton img {
+    width: 100%;
+}
+
+/* Estilos para el contenedor que une la imagen, texto y botón */
+.imagen-texto {
+    position: relative;
+}
+
+.imagen-texto img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Estilos para el contenedor del texto */
+.texto-pelicula {
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 345px; /* Ancho ajustado para que quepa dentro de la imagen */
+}
+
+/* Estilos para el título del texto */
+.texto-pelicula h3 {
+    margin-top: 0;
+    left: 0;
+}
+
+/* Estilos para el párrafo del texto */
+.texto-pelicula p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón */
+.boton {
+    align-self: flex-start;
+    position: absolute;
+    bottom: 35px;
+    left: 25px;
+    border-radius: 20px;
+    background-color: white;
+    height: 30px;
+    width: 100px;
+    border-bottom: none;
+}
+
+/* Estilos para el botón al pasar el cursor sobre él */
+.boton:hover {
+    cursor: pointer; /* Cambiar cursor */
+    background-color: #F40017; /* Cambiar color de fondo */
+    color: white; /* Cambiar color de texto */
+}
+
+
+/**Estilo para el titulo de la sección*/
+
+.titulo-carrusel {
+    padding-left: 40px;
+
+}
