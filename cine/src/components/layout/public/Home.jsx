@@ -1,23 +1,23 @@
 /*Primera pagina que el usuario podra visualizar*/
 
-/*Importación de librerias */
+/*Importación de componentes de comps*/
 import Carrusel from "../../comps/Carrusel";
 import Estrenos from "../../comps/Estrenos"
+import Promociones from "../../comps/Promociones";
 
-
-import "../../estilos/home.css"
+import "../../estilos/home.css";
 
 const Home = () => {
     return (
         <>
             {/*Componente carrusel*/}
             <Carrusel/>
-            {/*Componente Estrenos*/}
+            {/*Componente estrenos*/}
             <Estrenos/>
+            {/*Componente promociones*/}
+            <Promociones/>
         </>
-
-    )
-        ;
-}
+    );
+};
 
 export default Home;

@@ -1,36 +1,32 @@
-/*Página de estilos del footer*/
+/*Hoja de estilos del footer*/
 
-/*Estilos del footer*/
-.contenedor-footer {
-    height: 40px;
-    color: red;
-    padding: 20px;
-    width: 100%;
-    position: fixed;
-    bottom: 10px;
-    left: 0;
-    text-align: center;
-    border-top: 1px solid #E5E5E5;
-    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
-    align-items: center;
-
+/*Contiene el titulo y sus redes sociales*/
+.contenedor-titulo-redes {
+    margin-left: 40px;
 }
 
-/*Contenedor adentro del footer contiene las redes*/
-.footer-redes {
+/*Estilos especificos de los iconos de redes con sus nombre*/
+.footer-redes{
     display: flex;
-    justify-content: end;
-    margin-right: 100px;
-    font-family: "Fira Sans", sans-serif;
-    align-items: center;
+    justify-content: space-between;
 }
 
-/*Edición para el icono de twitter*/
-.twitter {
-    margin-right: 20px;
+.footer-redes a{
+   text-decoration: none;
+    color: inherit;
 }
 
-/*Edición para el texto de redes*/
-.redes {
-    margin-right: 20px;
+/*Contiene información y algunas cosas*/
+.contenedor-info-copyright{
+    margin-right: 40px;
+}
+
+
+/*Contiene el footer entero*/
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 2px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }

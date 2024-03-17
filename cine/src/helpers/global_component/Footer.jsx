@@ -12,11 +12,30 @@ import {faTwitterSquare, faInstagram} from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
     return (
         <footer className={"contenedor-footer"}>
-            <div className={"footer-redes"}>
-                <div className="redes"><h2> Redes sociales </h2></div>
-                <div className="twitter"><FontAwesomeIcon icon={faTwitterSquare}/> Twitter</div>
-                <div className="instagram"><FontAwesomeIcon icon={faInstagram}/> Instagram</div>
+
+            <div className={"contenedor-titulo-redes"}>
+                <h2> Redes sociales </h2>
+                <div className={"footer-redes"}>
+                    <a href={"twitter.com"}>
+                        <div className="twitter"><FontAwesomeIcon icon={faTwitterSquare}/> Twitter</div>
+                    </a>
+                    <a href={"instagram.com"}>
+                        <div className="instagram"><FontAwesomeIcon icon={faInstagram}/> Instagram</div>
+                    </a>
+
+                </div>
             </div>
+            <div className={"contenedor-info-copyright"}>
+                <div className={"info-footer"}>
+                    <p>Dirección</p>
+                    <p>Teléfono</p>
+                    <p>Email</p>
+                </div>
+                <div className={"footer-copyright"}>
+                    <p> © 2024 Todos los derechos reservados </p>
+                </div>
+            </div>
+
         </footer>
     );
 }

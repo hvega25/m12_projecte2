@@ -9,9 +9,7 @@ import RutasPrivadas from "../components/layout/private/page/RutasPrivadas";
 
 const Rutas = () => {
 
-    /*Recordatorio para herson del futuro
-     Crear el public layout y el private layout
-    */
+
 
     //prueba de usuario autenticado
     const usuarioAutenticado = true;

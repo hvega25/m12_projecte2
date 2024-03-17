@@ -1,21 +1,20 @@
 /*Contenedor padre de peliculas*/
-
+.estrenos-principal{
+    height: 500px;
+}
 .estrenos{
     margin-left: 40px;
     font-family: "Fira Sans", sans-serif;
-
-}
-.separador {
-    position: relative;
 }
 
-/*Contenedor peliculas hijo*/
+
+/*Contenedor peliculas hijo sirve para centrar los poster*/
 .estrenos_grupos {
-    background-color: #FFF7F1;
+    background-color: #df5c7e;
     width: 1400px;
     height: 350px;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 5%);
     display: flex;
@@ -31,6 +30,7 @@
     top: 50%;
     left: 50%;
     transform: translate(5%, 20%);
+    background-color: white;
 }
 
 /*Dar estilo a la imagen de cada ImagenTextoEstreno*/

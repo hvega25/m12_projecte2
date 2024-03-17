@@ -1,4 +1,3 @@
-
 /*Contenedor de todas las imagenes y texto generado*/
 .carrusel-img-boton {
     display: flex;
@@ -88,10 +87,14 @@
 }
 
 /* Estilos para el botón al pasar el cursor sobre él */
-.boton:hover {
+.boton:hover,
+boton:focus {
     cursor: pointer; /* Cambiar cursor */
     background-color: #F40017; /* Cambiar color de fondo */
     color: white; /* Cambiar color de texto */
+    transform: scale(1.1);
+    z-index: 1;
+
 }
 
 
