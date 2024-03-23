@@ -1,7 +1,7 @@
 /*Componente para simular el fetch de una api */
 
 /**RECUERDO PARA EL HERSON DEL FUTURO HACER EL FETCH CON EL API BUENO NO ES RECUERDO ES OBLIGACIÑÓN*/
-import imagen from "../imagenes/lobo de wallstreet.jpg"
+import imagen from "../../imagenes/lobo de wallstreet.jpg"
 
 
 //Datos de prueba

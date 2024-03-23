@@ -4,7 +4,7 @@
 import "../estilos/estrenos.css"
 
 /*Importacion de datos de prueba*/
-import datos_prueba from "./Datos_prueba";
+import datos_prueba  from "../comps/DatosPruebaJson/Datos_prueba";
 
 const Estrenos = () => {
     return (

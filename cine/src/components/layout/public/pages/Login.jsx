@@ -1,6 +1,7 @@
 /*Pagina donde el usuario tendra que identificarse o registrarse*/
 import React from "react";
-import LoginComp from "../../comps/LoginComp";
+import LoginComp from "../../../comps/LoginComp";
+
 
 const Login = () => {
     return (

@@ -3,7 +3,7 @@
 //Importación necesarias
 import "../estilos/carrusel-estilos.css";
 //importación básica antes de hacer tener una api
-import datos_prueba  from "./Datos_prueba";
+import datos_prueba  from "../comps/DatosPruebaJson/Datos_prueba";
 
 const Carrusel = () => {
     return (

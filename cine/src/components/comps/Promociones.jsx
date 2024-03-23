@@ -4,7 +4,7 @@
 import "../estilos/promociones.css"
 
 //Importacion de datos de prueba
-import promo from "../comps/PromoPrueba"
+import promo from "../comps/DatosPruebaJson/PromoPrueba"
 
 
 const Promociones = () => {

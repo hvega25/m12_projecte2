@@ -2,14 +2,14 @@
 * un usuario ya registrado my logeado podra acceder*/
 
 import {Route, Routes} from "react-router-dom";
-import Perfil from "./Perfil";
-import React from "react";
-import Error from "../../../../helpers/global_component/Error";
-import Home from "../../public/Home";
-import Salas from "../../public/Salas";
-import Login from "../../public/Login";
-import Cartelera from "../../public/Cartelera";
-import Promociones from "../../public/Promociones";
+import Perfil from "./page/Perfil";
+import Home from "../../public/pages/Home";
+import Salas from "../../public/pages/Salas";
+import Login from "../../public/pages/Login";
+import Cartelera from "../../public/pages/Cartelera";
+import Promociones from "../../../comps/Promociones";
+import Error from "../../../../helpers/global_component/Error"
+
 
 const RutasPrivadas = () => {
     return (
