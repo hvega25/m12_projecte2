@@ -1,106 +1,169 @@
-/*Contenedor de todas las imagenes y texto generado*/
-.carrusel-img-boton {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    padding: 40px;
+/*Responsive para pantallas de celulares*/
+@media only screen and (max-width: 767px) {
+    .descripcion-pelicula, .titulo-pelicula, .boton {
+        display: none;
+    }
+
+    /* Estilos para el contenedor del texto */
+    .texto-pelicula {
+        display: none;
+        border: none;
+    }
+
 
 }
 
-.contenedor-img-boton {
-    width: 500px;
-    margin-right: 20px;
-}
-
-.contenedor-img-boton img {
-    width: 100%;
-}
-
-/* Estilos para la fila de imágenes */
-.carrusel-img-boton {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Estilos para el contenedor de cada imagen y texto */
-.contenedor-img-boton {
-    width: 500px;
-    margin-right: 20px;
+/*Responsive para pantallas de tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
 }
 
-/* Estilos para las imágenes */
-.contenedor-img-boton img {
-    width: 100%;
+/*Responsive para pantallas de portatil*/
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    /*Contenedor principal*/
+    .contenedor-princial{
+        display: flex;
+        justify-content: center;
+        width: 1000px;
+    }
+
+
+    /*Contenedor de la imagen mas texto*/
+    .contenedor-img-boton{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 0 10px;
+        width: 100%;
+    }
+
+    /*Titulo y descripcion de la pelicula*/
+    .texto-pelicula {
+        display: none;
+    }
+
+
+    /*Boton del carrusel en las imagenes*/
+    .boton {
+        display: none;
+    }
+
 }
 
-/* Estilos para el contenedor que une la imagen, texto y botón */
-.imagen-texto {
-    position: relative;
-}
+/*Responsive para pantallas de escritorio*/
+@media only screen and (min-width: 1440px) {
 
-.imagen-texto img {
-    width: 100%;
-    display: block;
-    border-radius: 20px;
-}
 
-/* Estilos para el contenedor del texto */
-.texto-pelicula {
-    margin: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100px;
-    width: 345px; /* Ancho ajustado para que quepa dentro de la imagen */
-}
+    /*Contenedor de todas las imagenes y texto generado*/
+    .carrusel-img-boton {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
 
-/* Estilos para el título del texto */
-.texto-pelicula h3 {
-    margin-top: 0;
-    left: 0;
-}
+    }
 
-/* Estilos para el párrafo del texto */
-.texto-pelicula p {
-    margin-bottom: 10px;
-}
+    .contenedor-img-boton {
+        width: 500px;
+        margin-right: 20px;
+    }
 
-/* Estilos para el botón */
-.boton {
-    align-self: flex-start;
-    position: absolute;
-    bottom: 35px;
-    left: 25px;
-    border-radius: 20px;
-    background-color: white;
-    height: 30px;
-    width: 100px;
-    border-bottom: none;
-}
+    .contenedor-img-boton img {
+        width: 100%;
+    }
 
-/* Estilos para el botón al pasar el cursor sobre él */
-.boton:hover,
-boton:focus {
-    cursor: pointer; /* Cambiar cursor */
-    background-color: #F40017; /* Cambiar color de fondo */
-    color: white; /* Cambiar color de texto */
-    transform: scale(1.1);
-    z-index: 1;
+    /* Estilos para la fila de imágenes */
+    .carrusel-img-boton {
+        display: flex;
+        justify-content: space-between;
+        border-image: fill 0 linear-gradient(#0001, #000);
+    }
+
+    /* Estilos para el contenedor de cada imagen y texto */
+    .contenedor-img-boton {
+        width: 500px;
+        margin-right: 20px;
+    }
+
+    /* Estilos para las imágenes */
+    .contenedor-img-boton img {
+        width: 100%;
+    }
+
+    /* Estilos para el contenedor que une la imagen, texto y botón */
+    .imagen-texto {
+        position: relative;
+    }
+
+    .imagen-texto img {
+        width: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+
+    /* Estilos para el contenedor del texto */
+    .texto-pelicula {
+        border-image: fill 0 linear-gradient(#0001, #000);
+        margin: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+        width: 350px;
+        border-radius: 20px;
+    }
+
+    /* Estilos para el título del texto */
+    .texto-pelicula h3 {
+        margin-top: 0;
+        left: 0;
+    }
+
+    /* Estilos para el párrafo del texto */
+    .texto-pelicula p {
+        margin-bottom: 10px;
+    }
+
+    /* Estilos para el botón */
+    .boton {
+        align-self: flex-start;
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        border-radius: 20px;
+        background-color: white;
+        height: 30px;
+        width: 100px;
+        border-bottom: none;
+    }
+
+    /* Estilos para el botón al pasar el cursor sobre él */
+    .boton:hover,
+    boton:focus {
+        cursor: pointer;
+        background-color: #F40017;
+        color: white;
+        transform: scale(1.1);
+        z-index: 1;
+
+    }
+
 
 }
 
 
 /**Estilo para el titulo de la sección*/
+.titulo-carrusel h1 {
+    font-family: "Fira Sans", sans-serif;
+    padding-left: 50px;
 
-.titulo-carrusel {
-    padding-left: 40px;
-
+    /*Esto para resaltar el texto recordar para usarlo en otro titulo*/
+    text-shadow: 0px 0px 8px #0D1717,
+    0px 0px 12px #0D1717,
+    0px 0px 16px #0D1717;
+    color: wheat;
 }

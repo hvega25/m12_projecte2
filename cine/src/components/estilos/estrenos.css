@@ -1,3 +1,20 @@
+/*Responsive para pantallas de celulares*/
+@media only screen and (max-width: 767px){
+
+}
+/*Responsive para pantallas de tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+/*Responsive para pantallas de portatil*/
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+
+}
+/*Responsive para pantallas de escritorio*/
+@media only screen and (min-width: 1440px){
+
+
+}
 /*Contenedor padre de peliculas*/
 .estrenos-principal{
     height: 500px;

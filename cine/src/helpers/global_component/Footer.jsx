@@ -6,11 +6,13 @@ import "../estilos/footer.css"
 
 /*Importación de iconos de font awesome*/
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faTwitterSquare, faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {faTwitterSquare, faInstagram, faTiktok} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope, faLocationDot, faPhone} from "@fortawesome/free-solid-svg-icons";
 
 //Componente footer este ira en cada página de la web
 const Footer = () => {
     return (
+
         <footer className={"contenedor-footer"}>
 
             <div className={"contenedor-titulo-redes"}>
@@ -22,14 +24,17 @@ const Footer = () => {
                     <a href={"instagram.com"}>
                         <div className="instagram"><FontAwesomeIcon icon={faInstagram}/> Instagram</div>
                     </a>
+                    <a href={"instagram.com"}>
+                        <div className="instagram"><FontAwesomeIcon icon={faTiktok}/> Tiktok</div>
+                    </a>
 
                 </div>
             </div>
             <div className={"contenedor-info-copyright"}>
                 <div className={"info-footer"}>
-                    <p>Dirección</p>
-                    <p>Teléfono</p>
-                    <p>Email</p>
+                    <p><FontAwesomeIcon icon={faLocationDot}/> Dirección</p>
+                    <p><FontAwesomeIcon icon={faPhone}/> Teléfono</p>
+                    <p><FontAwesomeIcon icon={faEnvelope}/> Email</p>
                 </div>
                 <div className={"footer-copyright"}>
                     <p> © 2024 Todos los derechos reservados </p>

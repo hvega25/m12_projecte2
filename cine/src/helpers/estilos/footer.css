@@ -1,32 +1,53 @@
 /*Hoja de estilos del footer*/
 
-/*Contiene el titulo y sus redes sociales*/
-.contenedor-titulo-redes {
-    margin-left: 40px;
+
+/*Responsive para pantallas de celulares*/
+@media only screen and (max-width: 767px) {
+
 }
 
-/*Estilos especificos de los iconos de redes con sus nombre*/
-.footer-redes{
-    display: flex;
-    justify-content: space-between;
+/*Responsive para pantallas de tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
 }
 
-.footer-redes a{
-   text-decoration: none;
-    color: inherit;
+/*Responsive para pantallas de portatil*/
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
 }
 
-/*Contiene información y algunas cosas*/
-.contenedor-info-copyright{
-    margin-right: 40px;
-}
+/*Responsive para pantallas de escritorio*/
+@media only screen and (min-width: 1440px) {
+
+    /*Contiene el titulo y sus redes sociales*/
+    .contenedor-titulo-redes {
+        margin-left: 40px;
+    }
+
+    /*Estilos especificos de los iconos de redes con sus nombre*/
+    .footer-redes {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-redes a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /*Contiene información y algunas cosas*/
+    .contenedor-info-copyright {
+        margin-right: 40px;
+    }
 
 
-/*Contiene el footer entero*/
-.contenedor-footer{
-    display: flex;
-    justify-content: space-between;
+    /*Contiene el footer entero*/
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
 
-    border-top: 2px solid #ccc;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+        border-top: 2px solid #ccc;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
 }

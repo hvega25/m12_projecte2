@@ -1,7 +1,13 @@
 /*Edición para el header global de la página*/
 
+
+/*Menu que solo aparece cuando la pantalla es inferior a 1023px*/
+.menuHamburguesa {
+    display: none;
+}
+
 /*Contenedor de todos los elementos del header*/
-.header_principal{
+.header_principal {
     display: flex;
     border-bottom: #282c34 solid 1px;
     padding-right: 100px;
@@ -14,16 +20,15 @@
 }
 
 
-
 /*Edición del texto dentro del header*/
 .header_principal a {
     color: #F40017;
     text-decoration: none;
     margin-right: 10px;
     font-family: "Fira Sans", sans-serif;
-
 }
 
+/*Contenedor secundario para agrupar los elementos*/
 .contenedor_header {
     display: flex;
     justify-content: space-between;
@@ -31,6 +36,13 @@
     width: 100%;
 }
 
+/*Icono inicio*/
+.inicioIcono {
+    color: #0D1717;
+    font-size: 30px;
+}
+
+/*Contenedor del logo principal*/
 .inicio {
     text-align: center;
     padding-left: 10%;
@@ -42,4 +54,58 @@
 
 .botonera a {
     font-size: 20px;
+    color: #0D1717;
+}
+
+/*Responsive para pantallas de celulares*/
+@media only screen and (max-width: 767px) {
+    .header_principal {
+        position: fixed;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        width: 100%;
+
+    }
+
+    .botonera {
+        display: none;
+    }
+
+    /*Contenedor icono inicio*/
+    .inicio {
+
+    }
+
+    /*Icono de inicio*/
+    .inicioIcono {
+        cursor: pointer;
+        padding: 20px;
+        font-size: 20px;
+        color: #0D1717;
+    }
+
+    /*Menu hamburguesa para pantallas responsive*/
+    .menuHamburguesa {
+        display: block;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    .contenedor_header {
+
+    }
+}
+
+/*Responsive para pantallas de tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/*Responsive para pantallas de portatil*/
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+}
+
+/*Responsive para pantallas de escritorio*/
+@media only screen and(max-width: 1440px) {
 }

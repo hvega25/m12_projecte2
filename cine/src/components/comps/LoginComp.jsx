@@ -23,14 +23,13 @@ const LoginComp = () => {
                                     <span> Contraseña </span>
                                 </div>
                                 <div className={"input-pass"}>
-                                    <input className={"input-contraseña"} placeholder={"Ingrese su contraseña"}/>
+                                    <input className={"input-contraseña"} type={"password"} placeholder={"Ingrese su contraseña"}/>
                                 </div>
                             </div>
                         </div>
-                        <div className={"formulario-botonera"}>
+                        <div className={"formularioBotonera"}>
                             <button className={"registrar"}> Registrate</button>
                             <button className={"acceder"}> Acceder</button>
-
                         </div>
                     </form>
                 </div>

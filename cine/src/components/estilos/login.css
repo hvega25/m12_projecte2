@@ -1,77 +1,63 @@
 /*Soy la hoja de estilos de la paǵina login, mucho gusto :D*/
+/*Responsive para pantallas de celulares*/
+@media only screen and (max-width: 767px){
 
-/*Contenedor de todo el componente login*/
+}
+/*Responsive para pantallas de tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+/*Responsive para pantallas de portatil*/
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+
+}
+/*Responsive para pantallas de escritorio*/
+@media only screen and (min-width: 1440px){
+
+
+}
+/*Responsive para pantallas de celulares*/
+@media only screen and (max-width: 767px){
+
+}
+/*Responsive para pantallas de tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+/*Responsive para pantallas de portatil*/
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+
+}
+/*Responsive para pantallas de escritorio*/
+@media only screen and (min-width: 1440px){
+
+
+}
+
+/*Pruebas*/
+.formulario-login, .contenedor-usuario-contraseña , .formulario-usuario ,.input-usuario{
+    border: black solid;
+}
+
+/*Contenedor primario del login*/
 .formulario-login {
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 700px;
 }
 
-/*Contiene el formulario*/
+/*Contenedor secundario del login*/
 .contenedor-form {
-    border: solid black 1px;
+    border: black solid 1px;
     width: 500px;
-    height: 600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background: rgb(218, 205, 189);
-    background: linear-gradient(90deg, rgba(218, 205, 189, 1) 0%, rgba(239, 151, 163, 1) 35%, rgba(212, 72, 111, 1) 100%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
 }
 
-
-/*Contenedor label e input de contraseña*/
-.formulario-contraseña {
-    margin-top: 20px;
-}
-
-/*Usuario titulo*/
-.form-us {
+/*Contenedor botones registro y acceder*/
+.formularioBotonera{
+    width: 250px;
     display: flex;
-    justify-content: center;
-}
-
-/*Botones de formulario*/
-.formulario-botonera {
-    display: flex;
-    margin-top: 20px;
     justify-content: space-between;
-}
-
-/*Contenedor del label de contraseña*/
-.form-pass {
-    display: flex;
-    justify-content: center;
-}
-
-
-/*COntenedor input contraseña*/
-.input-pass {
-    margin-top: 10px
-}
-
-/*Contenedor input usuario*/
-.input-usuario {
-    margin-top: 10px;
-}
-
-/*Input contraseña*/
-.input-contraseña {
-    border-radius: 20px;
-    height: 30px;
-}
-
-/*Input usuario*/
-.input-user {
-    border-radius: 20px;
-    height: 30px;
-}
-
-/*Edición titulo de usuario y contraseña*/
-.form-us, .form-pass span{
-    color: white;
-    font-family: "Fira Sans", sans-serif;
 }
