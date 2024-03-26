@@ -8,17 +8,17 @@ import "../../../estilos/home.css";
 //Importación de componentes
 import Carrusel from "../../../comps/Carrusel";
 import Estrenos from "../../../comps/Estrenos";
-import Promociones from "../../../comps/Promociones";
+import PromocionesComp from "../../../comps/PromocionesComp";
 
 const Home = () => {
     return (
         <>
             {/*Componente carrusel*/}
-            <Carrusel/>
-            {/*Componente estrenos  <Estrenos/>*/}
 
-            {/*Componente promociones <Promociones/>
-     */}
+            {/*Componente estrenos  */}
+            <Estrenos/>
+            {/*Componente promociones */}
+            <PromocionesComp/>
         </>
     );
 };

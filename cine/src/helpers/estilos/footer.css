@@ -14,6 +14,38 @@
 /*Responsive para pantallas de portatil*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
+
+    /*Contiene el titulo y sus redes sociales*/
+    .contenedor-titulo-redes {
+        margin-left: 40px;
+    }
+
+    /*Estilos especificos de los iconos de redes con sus nombre*/
+    .footer-redes {
+        display: flex;
+    }
+
+    .footer-redes a {
+        text-decoration: none;
+        color: inherit;
+        padding-right: 20px;
+    }
+
+    /*Contiene información y algunas cosas*/
+    .contenedor-info-copyright {
+        margin-right: 40px;
+    }
+
+
+    /*Contiene el footer entero*/
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #ccc;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+       width: 100%;
+    }
+
 }
 
 /*Responsive para pantallas de escritorio*/

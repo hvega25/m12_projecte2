@@ -1,43 +1,84 @@
 /*Soy la hoja de estilos de la paǵina login, mucho gusto :D*/
 /*Responsive para pantallas de celulares*/
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
 }
+
 /*Responsive para pantallas de tablets*/
-@media only screen and (min-width: 768px) and (max-width: 1023px){
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
 }
+
 /*Responsive para pantallas de portatil*/
-@media only screen and (min-width: 1024px) and (max-width: 1439px){
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
 }
+
 /*Responsive para pantallas de escritorio*/
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1440px) {
 
 
 }
+
 /*Responsive para pantallas de celulares*/
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
 }
+
 /*Responsive para pantallas de tablets*/
-@media only screen and (min-width: 768px) and (max-width: 1023px){
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
 }
+
 /*Responsive para pantallas de portatil*/
-@media only screen and (min-width: 1024px) and (max-width: 1439px){
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
 }
+
 /*Responsive para pantallas de escritorio*/
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1440px) {
 
 
 }
 
-/*Pruebas*/
-.formulario-login, .contenedor-usuario-contraseña , .formulario-usuario ,.input-usuario{
-    border: black solid;
+
+/*Ajustes generales despues cambiar el orden*/
+
+/*Centrar elementos*/
+.contenedor-usuario-contraseña {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
 }
+
+/*Ajsute en comun del centrado del label y sus inputs*/
+.contenedor-usuario-contraseña span, .contenedor-usuario-contraseña input {
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    font-family: "Fira Sans", sans-serif;
+}
+
+/*Formato a los inputs*/
+.contenedor-usuario-contraseña input {
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 20px;
+    width: 250px;
+    border: #0D1717 solid 1px;
+
+}
+
+.contenedor-usuario-contraseña input::placeholder {
+    color: #0D1717;
+    display: flex;
+    text-align: center;
+    cursor: move;
+}
+
+
 
 /*Contenedor primario del login*/
 .formulario-login {
@@ -53,11 +94,29 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 500px;
+    border-radius: 20px;
+    background: rgb(218, 205, 189);
+    background: linear-gradient(90deg, rgba(218, 205, 189, 1) 0%, rgba(239, 151, 163, 1) 35%, rgba(212, 72, 111, 1) 100%);
 }
 
 /*Contenedor botones registro y acceder*/
-.formularioBotonera{
+.formularioBotonera {
     width: 250px;
     display: flex;
     justify-content: space-between;
+
+    flex-direction: row;
+}
+
+
+.ContRegistro{
+    display: flex;
+    margin-right: 200px;
+    margin-left: 80px;
+}
+
+.registrar , .perfil {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }

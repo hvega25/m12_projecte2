@@ -7,7 +7,7 @@ import "../estilos/promociones.css"
 import promo from "../comps/DatosPruebaJson/PromoPrueba"
 
 
-const Promociones = () => {
+const PromocionesComp = () => {
     return (
 
         /*Contenedor principal */
@@ -37,4 +37,4 @@ const Promociones = () => {
     );
 };
 
-export default Promociones;
+export default PromocionesComp;

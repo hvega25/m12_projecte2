@@ -20,32 +20,54 @@
 
 /*Responsive para pantallas de portatil*/
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
-    /*Contenedor principal*/
-    .contenedor-princial{
-        display: flex;
-        justify-content: center;
-        width: 1000px;
+
+    /*Contenedor principal que contiene todas las imagenes creadas*/
+    .carrusel-img-boton {
+        width: 1400px;
+        transform: translate(10%, 0%);
+         border: #0D1717 solid 1px;
     }
 
-
-    /*Contenedor de la imagen mas texto*/
-    .contenedor-img-boton{
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        margin: 0 10px;
+    /*Estilo especifico para la imagen*/
+    .contenedor-img-boton img {
         width: 100%;
-    }
-
-    /*Titulo y descripcion de la pelicula*/
-    .texto-pelicula {
-        display: none;
+        border-radius: 20px;
+        border: #0D1717 solid 1px;
     }
 
 
-    /*Boton del carrusel en las imagenes*/
-    .boton {
-        display: none;
+    /*Ajusta el tamaño del poster esto incluye la imagen, titulo, descripcion y boton*/
+    .imagen-texto {
+        padding-right: 20px;
+
+    }
+
+    /*Ajuste del titulo de la imagen*/
+    .imagen-texto h3 {
+        position: absolute;
+        color: white;
+        top: 0;
+        margin-left: 40px;
+    }
+
+    /*Ajuste de la descripcion del poster*/
+    .imagen-texto p {
+        position: absolute;
+        top: 0;
+        width: 300px;
+        margin-top: 50px;
+        color: white;
+        margin-left: 40px;
+    }
+
+    /*Ajuste del  boton del poster*/
+    .imagen-texto button {
+        position: absolute;
+        color: black;
+        bottom: 0;
+        width: 90px;
+        margin-left: 40px;
+        margin-bottom: 40px;
     }
 
 }
@@ -53,103 +75,16 @@
 /*Responsive para pantallas de escritorio*/
 @media only screen and (min-width: 1440px) {
 
-
-    /*Contenedor de todas las imagenes y texto generado*/
     .carrusel-img-boton {
-        display: flex;
-        justify-content: space-between;
-        padding: 40px;
+        width: 1000px;
+        transform: translate(50%, 0%);
+        border: #0D1717 solid 1px;
 
-    }
-
-    .contenedor-img-boton {
-        width: 500px;
-        margin-right: 20px;
     }
 
     .contenedor-img-boton img {
         width: 100%;
-    }
-
-    /* Estilos para la fila de imágenes */
-    .carrusel-img-boton {
-        display: flex;
-        justify-content: space-between;
-        border-image: fill 0 linear-gradient(#0001, #000);
-    }
-
-    /* Estilos para el contenedor de cada imagen y texto */
-    .contenedor-img-boton {
-        width: 500px;
-        margin-right: 20px;
-    }
-
-    /* Estilos para las imágenes */
-    .contenedor-img-boton img {
-        width: 100%;
-    }
-
-    /* Estilos para el contenedor que une la imagen, texto y botón */
-    .imagen-texto {
-        position: relative;
-    }
-
-    .imagen-texto img {
-        width: 100%;
-        display: block;
         border-radius: 20px;
-    }
-
-    /* Estilos para el contenedor del texto */
-    .texto-pelicula {
-        border-image: fill 0 linear-gradient(#0001, #000);
-        margin: 20px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        color: white;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100px;
-        width: 350px;
-        border-radius: 20px;
-    }
-
-    /* Estilos para el título del texto */
-    .texto-pelicula h3 {
-        margin-top: 0;
-        left: 0;
-    }
-
-    /* Estilos para el párrafo del texto */
-    .texto-pelicula p {
-        margin-bottom: 10px;
-    }
-
-    /* Estilos para el botón */
-    .boton {
-        align-self: flex-start;
-        position: absolute;
-        top: 35px;
-        left: 35px;
-        border-radius: 20px;
-        background-color: white;
-        height: 30px;
-        width: 100px;
-        border-bottom: none;
-    }
-
-    /* Estilos para el botón al pasar el cursor sobre él */
-    .boton:hover,
-    boton:focus {
-        cursor: pointer;
-        background-color: #F40017;
-        color: white;
-        transform: scale(1.1);
-        z-index: 1;
-
     }
 
 

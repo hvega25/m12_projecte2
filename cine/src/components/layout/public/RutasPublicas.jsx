@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Cartelera from "./pages/Cartelera";
 import Promociones from "./pages/Promociones";
 import Salas from "./pages/Salas";
+import Registro from "./pages/Registro";
 
 const RutasPublicas = () => {
     return (
@@ -20,6 +21,7 @@ const RutasPublicas = () => {
             <Route path="/login" element={<Login/>}/>
             <Route path="/cartelera" element={<Cartelera/>}/>
             <Route path="/promociones" element={<Promociones/>}/>
+            <Route path="/registro" element={<Registro/>}/>
 
             {/*En caso de que no coincida ninguna ruta nos llevará a la página de error*/}
             <Route path="*" element={<Error/>}></Route>

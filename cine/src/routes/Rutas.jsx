@@ -22,11 +22,11 @@ const Rutas = () => {
             <Header/>
             {/*"Condicional para saber que rutas tomar"*/}
             {usuarioAutenticado ? (
-                /*Si el condicional es false se ejecutara esta ruta*/
+                /*Si el condicional es true se ejecutara esta ruta*/
                 <>
                     <RutasPrivadas/>
                 </>
-                /*Si el condicional es true se ejecuta esta parte*/
+                /*Si el condicional es false se ejecuta esta parte*/
             ) : (<RutasPublicas/>)
 
 

@@ -7,8 +7,9 @@ import Home from "../../public/pages/Home";
 import Salas from "../../public/pages/Salas";
 import Login from "../../public/pages/Login";
 import Cartelera from "../../public/pages/Cartelera";
-import Promociones from "../../../comps/Promociones";
 import Error from "../../../../helpers/global_component/Error"
+import Registro from "../../public/pages/Registro";
+import Promociones from "../../public/pages/Promociones";
 
 
 const RutasPrivadas = () => {
@@ -18,14 +19,14 @@ const RutasPrivadas = () => {
             <Route path="/perfil" element={<Perfil/>}/>
 
             {/*Rutas públicas agregadas*/}
-                  {/*Ruta pública que tendŕa acceso a la mayoria de las páginas*/}
+            {/*Ruta pública que tendŕa acceso a la mayoria de las páginas*/}
             <Route path="/" index element={<Home/>}>
             </Route>
             <Route path="/salas" element={<Salas/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/cartelera" element={<Cartelera/>}/>
             <Route path="/promociones" element={<Promociones/>}/>
-
+            <Route path="/registro" element={<Registro/>}/>
             {/*En caso de que no coincida ninguna ruta nos llevará a la página de error*/}
             <Route path="*" element={<Error/>}></Route>
         </Routes>

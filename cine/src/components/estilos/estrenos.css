@@ -1,92 +1,127 @@
 /*Responsive para pantallas de celulares*/
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
 
 }
+
 /*Responsive para pantallas de tablets*/
-@media only screen and (min-width: 768px) and (max-width: 1023px){
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
 }
+
 /*Responsive para pantallas de portatil*/
-@media only screen and (min-width: 1024px) and (max-width: 1439px){
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
+    .estrenos-principal {
+        width: 1200px;
+        height: 800px;
+    }
+
+    .estrenos_grupos {
+        display: flex;
+        width: 900px;
+        transform: translate(25%, 0%);
+        background-color: #df5c7e;
+        padding: 40px;
+    }
+
+    /*Al seleccionar una pelicula aumenta tamaño*/
+    .poster:hover,
+    .poster:focus {
+        transform: scale(1.1);
+        z-index: 1;
+        cursor: pointer;
+    }
+
+
+    .posterContenedor img {
+        width: 100%;
+    }
+
+    .posterContenedor img {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 }
+
 /*Responsive para pantallas de escritorio*/
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1440px) {
+
+    /*Contenedor padre de peliculas*/
+    .estrenos-principal {
+        height: 500px;
+    }
+
+    .estrenos {
+        margin-left: 40px;
+        font-family: "Fira Sans", sans-serif;
+    }
 
 
-}
-/*Contenedor padre de peliculas*/
-.estrenos-principal{
-    height: 500px;
-}
-.estrenos{
-    margin-left: 40px;
-    font-family: "Fira Sans", sans-serif;
-}
+    /*Contenedor peliculas hijo sirve para centrar los poster*/
+    .estrenos_grupos {
+        background-color: #df5c7e;
+        width: 1400px;
+        height: 350px;
+        position: relative;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 5%);
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    /*COntenedor imagen con texto */
+    .posterContenedor {
+        border: black solid;
+        width: 300px;
+        height: 250px;
+        border-radius: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(5%, 20%);
+        background-color: white;
+    }
 
-/*Contenedor peliculas hijo sirve para centrar los poster*/
-.estrenos_grupos {
-    background-color: #df5c7e;
-    width: 1400px;
-    height: 350px;
-    position: relative;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 5%);
-    display: flex;
-    flex-wrap: wrap;
-}
+    /*Dar estilo a la imagen de cada ImagenTextoEstreno*/
+    .posterContenedor img {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 
-/*COntenedor imagen con texto */
-.posterContenedor {
-    border: black solid;
-    width: 300px;
-    height: 250px;
-    border-radius: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(5%, 20%);
-    background-color: white;
-}
+    .poster {
+        flex: 0 0 25%;
+    }
 
-/*Dar estilo a la imagen de cada ImagenTextoEstreno*/
-.posterContenedor img {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
+    /*Estilos para el texto del poster de estrenos*/
+    .estrenos_tituloTexto {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-.poster {
-    flex: 0 0 25%;
-}
+    .titulo {
+        font-weight: bold
+    }
 
-/*Estilos para el texto del poster de estrenos*/
-.estrenos_tituloTexto {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    .estrenos_tituloTexto span {
+        font-size: 12px;
+        margin-left: 10px;
+    }
 
-.titulo {
-    font-weight: bold
-}
+    .estrenos_tituloTexto p {
+        font-size: 11px;
+        margin-left: 10px;
+    }
 
-.estrenos_tituloTexto span {
-    font-size: 12px;
-    margin-left: 10px;
-}
+    /*Al seleccionar una pelicula aumenta tamaño*/
+    .poster:hover,
+    .poster:focus {
+        transform: scale(1.1);
+        z-index: 1;
+        cursor: pointer;
+    }
 
-.estrenos_tituloTexto p {
-    font-size: 11px;
-    margin-left: 10px;
-}
-
-/*Al seleccionar una pelicula aumenta tamaño*/
-.poster:hover,
-.poster:focus{
-    transform: scale(1.1);
-    z-index: 1;
-    cursor: pointer;
 }
