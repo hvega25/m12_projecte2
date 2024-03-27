@@ -1,0 +1,31 @@
+/*Página de estilos del formulario*/
+
+.RegistroPrincipal {
+ height: 800px;
+}
+/*Ajuste del título principal*/
+.RegistroPrincipal h2 h3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Contenedor importante*/
+form{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.RegistroSecundario{
+    transform: translate(50%, 50%);
+    width: 500px;
+}
+
+.nombre , .apellido , .correo , .contraseña , .confirmacontraseña{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    box-sizing: border-box;
+    outline: none;
+}

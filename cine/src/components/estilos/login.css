@@ -79,7 +79,6 @@
 }
 
 
-
 /*Contenedor primario del login*/
 .formulario-login {
     height: 700px;
@@ -104,19 +103,37 @@
     width: 250px;
     display: flex;
     justify-content: space-between;
-
     flex-direction: row;
 }
 
 
-.ContRegistro{
+.ContRegistro, .ContAcceder {
     display: flex;
-    margin-right: 200px;
-    margin-left: 80px;
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 20px;
+    border: #0D1717 solid 1px;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
 }
 
-.registrar , .perfil {
+
+.registrar, .perfil {
+    padding: 20px;
+}
+
+.registrar, .perfil {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+}
+
+.ContRegistro:hover, .ContAcceder:hover, .ContAcceder:focus, .ContRegistro:focus {
+    transform: scale(1.1);
+    z-index: 1;
+    cursor: pointer;
+    background-color: #F40017;
+    color: #cccccc;
 }
