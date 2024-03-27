@@ -10,7 +10,7 @@
 .header_principal {
     display: flex;
     border-bottom: #282c34 solid 1px;
-    padding-right: 100px;
+
     justify-content: space-between;
     align-items: center;
     height: 50px;
@@ -51,6 +51,7 @@
 
 .botonera > * {
     margin-left: 10px;
+    padding-right: 30px;
 }
 
 .botonera a {

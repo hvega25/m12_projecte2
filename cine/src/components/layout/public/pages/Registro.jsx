@@ -1,8 +1,11 @@
 /*Pagina que le muestra al usuario un formulario de registro*/
 
+
+/*Importacion de componentes*/
+import ComponentePerfil from "../../../comps/RegistroComp"
 const Registro = () => {
     return (
-        <h1>Estas en Registro</h1>
+        <ComponentePerfil/>
     )
 }
 

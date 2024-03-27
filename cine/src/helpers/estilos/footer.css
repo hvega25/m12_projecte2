@@ -43,7 +43,7 @@
         justify-content: space-between;
         border-top: 2px solid #ccc;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-       width: 100%;
+        width: 90%;
     }
 
 }
@@ -77,7 +77,7 @@
     .contenedor-footer {
         display: flex;
         justify-content: space-between;
-
+        width: 100%;
         border-top: 2px solid #ccc;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
